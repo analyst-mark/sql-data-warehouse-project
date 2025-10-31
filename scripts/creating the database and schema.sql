@@ -38,11 +38,14 @@ USE DataWarehouse;
 GO
 
 -- Create Schemas
+-- Raw data loaded directly from source systems    
 CREATE SCHEMA bronze;
 GO
 
+-- Data cleaned, standardized, and validated
 CREATE SCHEMA silver;
 GO
 
+-- Aggregated and analytics-ready data for reporting
 CREATE SCHEMA gold;
 GO
